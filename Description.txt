@@ -1,0 +1,38 @@
+Description of Data Features
+
+Location - LOC {} :Nominal
+
+Furnished - FUR : Nominal
+
+Ambience - AMB : Ordinal (there's some order. Noisy -> Semi-Serene -> Serene)
+
+Proximity to School - PROX_SCH : Ordinal
+
+Proximity to Road - PROX_ROAD : Ordinal
+
+Proximity to Mall - PROX_MALL : Ordinal
+
+Availability of Water - WATER : Nominal
+
+Housekeeping Services - HK_SER : Nominal
+
+Size  : Ratio
+
+Methods of Transforming Data
+
+Nominal - One Hot Encoding 
+e.g.    Karen = 10000,
+	Buruburu = 01000,
+	Madaraka = 00100,
+	Langata = 00010
+	
+     
+
+Ordinal - Integer Encoding 
+e.g.    Serene = 3, 
+	Semi-serene = 2, 
+	Noisy = 1
+
+Categorical data - Nominal and Ordinal
+Ratio and Interval stay the same cause they're numeric.
+Collinearity: one feature may affect the outcome of the other e.g. proximity to a school may affect ambience (noise)
